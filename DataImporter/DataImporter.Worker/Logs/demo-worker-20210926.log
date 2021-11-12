@@ -1,0 +1,33 @@
+2021-09-26 14:24:07.476 +06:00 [INF] Application Starting up
+2021-09-26 14:24:09.104 +06:00 [INF] Worker running at: "2021-09-26T14:24:09.0961988+06:00"
+2021-09-26 14:24:10.143 +06:00 [INF] Worker running at: "2021-09-26T14:24:10.1429568+06:00"
+2021-09-26 14:24:11.158 +06:00 [INF] Worker running at: "2021-09-26T14:24:11.1586020+06:00"
+2021-09-26 14:24:12.174 +06:00 [INF] Worker running at: "2021-09-26T14:24:12.1747696+06:00"
+2021-09-26 14:24:13.176 +06:00 [INF] Worker running at: "2021-09-26T14:24:13.1762754+06:00"
+2021-09-26 14:24:14.192 +06:00 [INF] Worker running at: "2021-09-26T14:24:14.1920140+06:00"
+2021-09-26 16:15:52.062 +06:00 [INF] Application Starting up
+2021-09-26 16:15:53.851 +06:00 [FTL] Application start-up failed
+System.FormatException: Input string was not in a correct format.
+   at System.Text.StringBuilder.FormatError()
+   at System.Text.StringBuilder.AppendFormatHelper(IFormatProvider provider, String format, ParamsArray args)
+   at System.IO.StreamWriter.WriteFormatHelper(String format, ParamsArray args, Boolean appendNewLine)
+   at System.IO.StreamWriter.WriteLine(String format, Object arg0)
+   at System.IO.TextWriter.SyncTextWriter.WriteLine(String format, Object arg0)
+   at System.Console.WriteLine(String format, Object arg0)
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 25
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 40
+2021-09-26 16:16:10.125 +06:00 [INF] Application Starting up
+2021-09-26 16:16:11.491 +06:00 [INF] Worker running at: "2021-09-26T16:16:11.4828208+06:00"
+2021-09-26 16:16:12.521 +06:00 [INF] Worker running at: "2021-09-26T16:16:12.5213422+06:00"
+2021-09-26 16:16:13.536 +06:00 [INF] Worker running at: "2021-09-26T16:16:13.5361899+06:00"
+2021-09-26 16:16:14.547 +06:00 [INF] Worker running at: "2021-09-26T16:16:14.5470112+06:00"
+2021-09-26 16:16:15.558 +06:00 [INF] Worker running at: "2021-09-26T16:16:15.5589262+06:00"
+2021-09-26 16:16:16.567 +06:00 [INF] Worker running at: "2021-09-26T16:16:16.5670294+06:00"
+2021-09-26 16:16:17.580 +06:00 [INF] Worker running at: "2021-09-26T16:16:17.5801729+06:00"
+2021-09-26 16:16:18.590 +06:00 [INF] Worker running at: "2021-09-26T16:16:18.5903858+06:00"
+2021-09-26 16:16:19.599 +06:00 [INF] Worker running at: "2021-09-26T16:16:19.5992773+06:00"
+2021-09-26 16:16:20.608 +06:00 [INF] Worker running at: "2021-09-26T16:16:20.6087940+06:00"

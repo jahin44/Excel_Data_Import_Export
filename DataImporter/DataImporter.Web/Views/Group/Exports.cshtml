@@ -1,0 +1,103 @@
+﻿@model ExportHistoryListModel
+@{
+    ViewData["Title"] = "Exports";
+}
+
+
+@section Styles
+{
+    <link rel="stylesheet" href="/DataImporter/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/DataImporter/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/DataImporter/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function () {
+            $('#exportHistorys').DataTable({
+                "processing": true,
+                "serverSide": true,
+                "ajax": "/Group/GetExportHistoryData",
+
+                "columnDefs": [
+                    {
+                        "orderable": false,
+                        "render": function (data, type, row) {
+                            return
+                        }
+                    }
+                ]
+
+            });
+            $('#fileStatuss').on('click', '.show-bs-modal', function (event) {
+                var id = $(this).data("id");
+                var modal = $("#modal-default");
+                modal.find('.modal-body p').text('Are you sure you want to delete this record?')
+                $("#deleteId").val(id);
+                $("#deleteForm").attr("action", "/group/delete")
+                modal.modal('show');
+            });
+
+            $("#deleteButton").click(function () {
+                $("#deleteForm").submit();
+            });
+        });
+
+    </script>
+}
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>Export Histories</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item "><a href="Index">Home</a></li>
+                    <li class="breadcrumb-item active">Exports</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">All Export Histories</h3>
+                </div>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="exportHistorys" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>Group Name</th>
+                                <th>Export Date</th>
+                                <th>Email</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Group Name</th>
+                                <th>Export Date</th>
+                                <th>Email</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                   <partial name="_DeletePopupPartial" />
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->

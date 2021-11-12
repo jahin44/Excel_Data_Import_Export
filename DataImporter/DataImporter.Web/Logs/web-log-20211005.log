@@ -1,0 +1,143 @@
+2021-10-05 00:49:21.783 +06:00 [INF] Application Starting up
+2021-10-05 00:50:43.116 +06:00 [INF] Application Starting up
+2021-10-05 01:10:25.939 +06:00 [INF] Application Starting up
+2021-10-05 01:14:24.447 +06:00 [INF] Application Starting up
+2021-10-05 01:18:33.913 +06:00 [INF] Application Starting up
+2021-10-05 01:25:46.953 +06:00 [INF] Application Starting up
+2021-10-05 01:26:15.942 +06:00 [INF] Application Starting up
+2021-10-05 01:27:37.670 +06:00 [INF] Application Starting up
+2021-10-05 01:29:22.592 +06:00 [INF] Application Starting up
+2021-10-05 01:30:39.978 +06:00 [INF] Application Starting up
+2021-10-05 01:36:25.181 +06:00 [INF] Application Starting up
+2021-10-05 01:38:53.911 +06:00 [INF] Application Starting up
+2021-10-05 01:40:45.176 +06:00 [INF] Application Starting up
+2021-10-05 01:42:05.570 +06:00 [INF] Application Starting up
+2021-10-05 01:53:38.027 +06:00 [INF] Application Starting up
+2021-10-05 01:59:06.113 +06:00 [INF] Application Starting up
+2021-10-05 02:53:21.697 +06:00 [INF] Application Starting up
+2021-10-05 03:09:14.575 +06:00 [INF] Application Starting up
+2021-10-05 03:12:48.966 +06:00 [INF] Application Starting up
+2021-10-05 03:13:51.638 +06:00 [INF] Application Starting up
+2021-10-05 03:17:25.110 +06:00 [INF] Application Starting up
+2021-10-05 03:19:50.126 +06:00 [INF] Application Starting up
+2021-10-05 03:21:03.487 +06:00 [INF] Application Starting up
+2021-10-05 03:23:04.471 +06:00 [INF] Application Starting up
+2021-10-05 03:25:07.500 +06:00 [INF] Application Starting up
+2021-10-05 03:27:28.777 +06:00 [INF] Application Starting up
+2021-10-05 03:29:57.978 +06:00 [INF] Application Starting up
+2021-10-05 03:31:46.183 +06:00 [INF] Application Starting up
+2021-10-05 03:33:45.095 +06:00 [INF] Application Starting up
+2021-10-05 03:36:14.328 +06:00 [INF] Application Starting up
+2021-10-05 03:37:24.151 +06:00 [INF] Application Starting up
+2021-10-05 03:38:06.225 +06:00 [INF] Application Starting up
+2021-10-05 03:39:21.419 +06:00 [INF] Application Starting up
+2021-10-05 03:40:43.308 +06:00 [INF] Application Starting up
+2021-10-05 03:41:45.293 +06:00 [INF] Application Starting up
+2021-10-05 03:42:55.925 +06:00 [INF] Application Starting up
+2021-10-05 03:43:42.121 +06:00 [INF] Application Starting up
+2021-10-05 03:44:26.601 +06:00 [INF] Application Starting up
+2021-10-05 03:45:25.601 +06:00 [INF] Application Starting up
+2021-10-05 03:46:02.060 +06:00 [INF] Application Starting up
+2021-10-05 03:47:15.493 +06:00 [INF] Application Starting up
+2021-10-05 03:48:53.125 +06:00 [INF] Application Starting up
+2021-10-05 03:58:01.103 +06:00 [INF] Application Starting up
+2021-10-05 03:59:18.260 +06:00 [INF] Application Starting up
+2021-10-05 04:01:22.057 +06:00 [INF] Application Starting up
+2021-10-05 04:02:21.929 +06:00 [INF] Application Starting up
+2021-10-05 04:03:33.205 +06:00 [INF] Application Starting up
+2021-10-05 04:04:28.312 +06:00 [ERR] Same File, Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 100
+2021-10-05 04:09:49.871 +06:00 [INF] Application Starting up
+2021-10-05 04:19:04.229 +06:00 [INF] Application Starting up
+2021-10-05 04:19:30.155 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 70
+2021-10-05 04:25:04.703 +06:00 [INF] Application Starting up
+2021-10-05 04:25:24.212 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 70
+2021-10-05 04:33:49.888 +06:00 [INF] Application Starting up
+2021-10-05 04:36:23.718 +06:00 [INF] Application Starting up
+2021-10-05 04:40:13.828 +06:00 [INF] Application Starting up
+2021-10-05 04:44:02.721 +06:00 [INF] Application Starting up
+2021-10-05 04:45:20.414 +06:00 [INF] Application Starting up
+2021-10-05 04:47:48.366 +06:00 [INF] Application Starting up
+2021-10-05 14:53:58.847 +06:00 [INF] Application Starting up
+2021-10-05 14:55:17.117 +06:00 [INF] Application Starting up
+2021-10-05 14:59:27.657 +06:00 [INF] Application Starting up
+2021-10-05 15:00:08.402 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.UpdateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 94
+   at DataImporter.Web.Models.GroupModel.EditGroupModel.Update() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\EditGroupModel.cs:line 44
+   at DataImporter.Web.Controllers.GroupController.Edit(EditGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 150
+   at lambda_method684(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-10-05 15:00:09.185 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-10-05 15:00:24.980 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 70
+2021-10-05 15:03:08.564 +06:00 [INF] Application Starting up
+2021-10-05 15:03:25.067 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.UpdateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 94
+   at DataImporter.Web.Models.GroupModel.EditGroupModel.Update() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\EditGroupModel.cs:line 44
+   at DataImporter.Web.Controllers.GroupController.Edit(EditGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 152
+2021-10-05 15:04:14.499 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 70
+2021-10-05 15:04:22.073 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.UpdateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 94
+   at DataImporter.Web.Models.GroupModel.EditGroupModel.Update() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\EditGroupModel.cs:line 44
+   at DataImporter.Web.Controllers.GroupController.Edit(EditGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 152
+2021-10-05 18:08:34.173 +06:00 [INF] Application Starting up
+2021-10-05 18:46:10.034 +06:00 [INF] Application Starting up
+2021-10-05 18:51:05.050 +06:00 [INF] Application Starting up
+2021-10-05 18:53:32.806 +06:00 [INF] Application Starting up
+2021-10-05 18:55:26.923 +06:00 [INF] Application Starting up
+2021-10-05 18:58:46.932 +06:00 [INF] Application Starting up
+2021-10-05 19:00:23.265 +06:00 [INF] Application Starting up
+2021-10-05 19:12:03.712 +06:00 [INF] Application Starting up
+2021-10-05 19:13:51.991 +06:00 [INF] Application Starting up
+2021-10-05 21:59:58.166 +06:00 [INF] Application Starting up
+2021-10-05 22:01:52.365 +06:00 [INF] Application Starting up

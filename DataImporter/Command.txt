@@ -1,0 +1,13 @@
+http://localhost:8080/
+
+docker build -t dataimporterweb -f DataImporter.Web/Dockerfile . 
+
+docker run -p 8080:80 -v dataimporter-data:/app/Logs -d dataimporterweb
+
+docker ps ++++++++ see all Image
+
+docker stop 54s4s545s545s +++++++++ stop 
+
+docker rm -f 2124545s ++++++ image delete
+
+docker rmi -f imagename ++++++ image delete

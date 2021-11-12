@@ -1,0 +1,35 @@
+version: "3"
+services:
+    web:
+        build: 
+            context: .
+            dockerfile: DataImporter.Web/Dockerfile
+        env_file: 
+            - web.env
+        restart: unless-stopped
+        volumes:
+            - app-volume:/app/wwwroot/UploadExcel
+        ports:
+            - "8000:80"
+        depends_on:
+            - db
+    worker:
+        build: 
+            context: .
+            dockerfile: DataImporter.Worker/Dockerfile
+        env_file: 
+            - web.env
+        depends_on: 
+            - db
+        restart: unless-stopped    
+        volumes:
+            - app-volume:/app/wwwroot/UploadExcel
+    db:
+        image: "mcr.microsoft.com/mssql/server"
+        env_file: 
+            - db.env
+        restart: unless-stopped    
+        ports:
+            - "1400:1433"
+volumes:
+     app-volume:

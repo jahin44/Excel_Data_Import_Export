@@ -1,0 +1,5 @@
+2021-10-19 01:39:24.731 +06:00 [INF] Application Starting up
+2021-10-19 01:40:41.534 +06:00 [ERR] Same File, Failed
+DataImporter.SystemImporter.Exceptions.InvalidParameterException: Data Not Same
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 85
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 117

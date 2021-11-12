@@ -1,0 +1,73 @@
+2021-09-25 00:31:17.735 +06:00 [INF] Application Starting up
+2021-09-25 00:36:43.476 +06:00 [INF] Application Starting up
+2021-09-25 00:40:28.192 +06:00 [INF] Application Starting up
+2021-09-25 00:41:44.433 +06:00 [INF] Application Starting up
+2021-09-25 00:47:28.995 +06:00 [INF] Application Starting up
+2021-09-25 01:07:27.155 +06:00 [INF] Application Starting up
+2021-09-25 01:10:28.559 +06:00 [INF] Application Starting up
+2021-09-25 01:13:28.500 +06:00 [INF] Application Starting up
+2021-09-25 01:17:47.817 +06:00 [INF] Application Starting up
+2021-09-25 01:20:28.352 +06:00 [INF] Application Starting up
+2021-09-25 01:25:32.287 +06:00 [INF] Application Starting up
+2021-09-25 02:27:07.265 +06:00 [INF] Application Starting up
+2021-09-25 02:33:43.532 +06:00 [INF] Application Starting up
+2021-09-25 02:46:26.082 +06:00 [INF] Application Starting up
+2021-09-25 02:48:51.454 +06:00 [INF] Application Starting up
+2021-09-25 02:52:16.825 +06:00 [INF] Application Starting up
+2021-09-25 02:56:43.832 +06:00 [INF] Application Starting up
+2021-09-25 02:59:13.630 +06:00 [INF] Application Starting up
+2021-09-25 03:07:36.628 +06:00 [INF] Application Starting up
+2021-09-25 04:20:41.818 +06:00 [INF] Application Starting up
+2021-09-25 04:21:49.951 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-25 04:21:50.106 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-25 04:21:50.132 +06:00 [WRN] User validation failed: DuplicateUserName.
+2021-09-25 04:22:20.002 +06:00 [INF] User created a new account with password.
+2021-09-25 04:27:49.855 +06:00 [INF] Application Starting up
+2021-09-25 04:43:04.688 +06:00 [INF] Application Starting up
+2021-09-25 04:43:41.897 +06:00 [WRN] User password validation failed: PasswordRequiresNonAlphanumeric.
+2021-09-25 04:43:42.436 +06:00 [WRN] GetSecurityStampAsync for user failed because stamp was null.
+2021-09-25 04:43:42.516 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: User security stamp cannot be null.
+   at Microsoft.AspNetCore.Identity.UserManager`1.GetSecurityStampAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.ValidateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.UpdateUserAsync(TUser user)
+   at Microsoft.AspNetCore.Identity.UserManager`1.AddToRoleAsync(TUser user, String role)
+   at DataImporter.Web.Controllers.AccountController.Register(RegisterModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\AccountController.cs:line 64
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|19_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-25 04:43:43.133 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)
+2021-09-25 04:44:21.680 +06:00 [INF] User created a new account with password.
+2021-09-25 04:49:39.288 +06:00 [INF] Application Starting up
+2021-09-25 04:49:47.178 +06:00 [INF] User logged out.
+2021-09-25 04:50:17.415 +06:00 [INF] User created a new account with password.
+2021-09-25 04:50:42.126 +06:00 [INF] User logged out.
+2021-09-25 04:50:46.033 +06:00 [INF] User logged in.
+2021-09-25 11:28:39.208 +06:00 [INF] Application Starting up
+2021-09-25 11:31:50.197 +06:00 [INF] User created a new account with password.
+2021-09-25 12:06:57.989 +06:00 [INF] Application Starting up
+2021-09-25 12:16:23.292 +06:00 [INF] Application Starting up
+2021-09-25 12:18:15.836 +06:00 [INF] Application Starting up

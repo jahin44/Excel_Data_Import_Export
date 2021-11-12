@@ -1,0 +1,7 @@
+2021-10-28 18:10:01.886 +06:00 [INF] Application Starting up
+2021-10-28 18:37:58.894 +06:00 [INF] Application Starting up
+2021-10-28 18:39:29.314 +06:00 [ERR] Same File, Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final_Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final_Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 81
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final_Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 117

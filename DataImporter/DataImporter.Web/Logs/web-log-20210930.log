@@ -1,0 +1,177 @@
+2021-09-30 00:02:14.488 +06:00 [INF] Application Starting up
+2021-09-30 00:04:20.957 +06:00 [ERR] Create Group Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FileStatus
+System.Object -> DataImporter.SystemImporter.BusinessObjects.FileStatus
+   at lambda_method682(Closure , Object , FileStatus , ResolutionContext )
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 64
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 106
+2021-09-30 00:04:20.957 +06:00 [ERR] Create Group Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FileStatus
+System.Object -> DataImporter.SystemImporter.BusinessObjects.FileStatus
+   at lambda_method682(Closure , Object , FileStatus , ResolutionContext )
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 64
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 106
+2021-09-30 00:07:24.102 +06:00 [INF] Application Starting up
+2021-09-30 00:21:32.912 +06:00 [INF] Application Starting up
+2021-09-30 00:24:24.840 +06:00 [INF] Application Starting up
+2021-09-30 00:26:42.963 +06:00 [INF] Application Starting up
+2021-09-30 00:42:19.964 +06:00 [INF] Application Starting up
+2021-09-30 00:44:18.686 +06:00 [INF] Application Starting up
+2021-09-30 00:47:24.078 +06:00 [ERR] Create Group Failed
+AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+Object -> FileStatus
+System.Object -> DataImporter.SystemImporter.BusinessObjects.FileStatus
+   at lambda_method681(Closure , Object , FileStatus , ResolutionContext )
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 01:58:31.928 +06:00 [INF] Application Starting up
+2021-09-30 02:02:45.773 +06:00 [ERR] Create Group Failed
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Invalid column name 'FileName'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   at Microsoft.Data.SqlClient.SqlDataReader.get_MetaData()
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean isAsync, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior)
+   at Microsoft.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReader(RelationalCommandParameterObject parameterObject)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+ClientConnectionId:df836e3d-e2c1-4d0c-942e-9e6f905f19b5
+Error Number:207,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at DataImporter.Data.UnitOfWork.Save() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Data\UnitOfWork.cs:line 17
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 52
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 76
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 02:17:12.093 +06:00 [INF] Application Starting up
+2021-09-30 02:34:13.171 +06:00 [INF] Application Starting up
+2021-09-30 02:39:16.336 +06:00 [INF] Application Starting up
+2021-09-30 02:39:58.159 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 59
+2021-09-30 02:40:31.809 +06:00 [INF] Application Starting up
+2021-09-30 02:42:33.358 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: Group title already exists
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 59
+2021-09-30 02:46:19.812 +06:00 [INF] Application Starting up
+2021-09-30 02:47:32.892 +06:00 [INF] Application Starting up
+2021-09-30 02:53:07.804 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 02:56:19.987 +06:00 [INF] Application Starting up
+2021-09-30 02:57:41.317 +06:00 [INF] Application Starting up
+2021-09-30 02:58:07.611 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:04:38.308 +06:00 [INF] Application Starting up
+2021-09-30 03:05:13.243 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:05:35.222 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:10:55.506 +06:00 [INF] Application Starting up
+2021-09-30 03:13:36.573 +06:00 [INF] Application Starting up
+2021-09-30 03:14:05.537 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:19:28.786 +06:00 [INF] Application Starting up
+2021-09-30 03:20:09.978 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:25:08.485 +06:00 [INF] Application Starting up
+2021-09-30 03:26:13.241 +06:00 [ERR] Create Group Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 107
+2021-09-30 03:32:43.648 +06:00 [INF] Application Starting up
+2021-09-30 04:18:30.329 +06:00 [INF] Application Starting up
+2021-09-30 16:54:59.802 +06:00 [INF] Application Starting up
+2021-09-30 16:56:38.858 +06:00 [INF] Application Starting up
+2021-09-30 17:08:32.175 +06:00 [INF] Application Starting up
+2021-09-30 17:10:30.904 +06:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(DbContext _, Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at DataImporter.Data.UnitOfWork.Save() in D:\GitHub\Final Project2\ASPNET_DevSkill\DataImporter\DataImporter.Data\UnitOfWork.cs:line 17
+   at DataImporter.SystemImporter.Services.GroupService.DeleteGroup(Int32 id) in D:\GitHub\Final Project2\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 110
+   at DataImporter.Web.Models.GroupModel.GroupListModel.Delete(Int32 id) in D:\GitHub\Final Project2\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\GroupListModel.cs:line 55
+   at DataImporter.Web.Controllers.GroupController.Delete(Int32 id) in D:\GitHub\Final Project2\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 141
+   at lambda_method804(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|24_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Session.SessionMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.MigrationsEndPointMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2021-09-30 17:10:33.171 +06:00 [ERR] An exception occurred while calculating the database error page content. Skipping display of the database error page.
+System.InvalidOperationException: StatusCode cannot be set because the response has already started.
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.ThrowResponseAlreadyStartedException(String name)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Server.IIS.Core.IISHttpContext.Microsoft.AspNetCore.Http.Features.IHttpResponseFeature.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Http.DefaultHttpResponse.set_StatusCode(Int32 value)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.Views.DatabaseErrorPage.ExecuteAsync()
+   at Microsoft.Extensions.RazorViews.BaseView.ExecuteAsync(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.DatabaseDeveloperPageExceptionFilter.HandleExceptionAsync(ErrorContext errorContext, Func`2 next)

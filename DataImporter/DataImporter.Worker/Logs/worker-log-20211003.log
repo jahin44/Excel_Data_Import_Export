@@ -1,0 +1,181 @@
+2021-10-03 00:29:45.160 +06:00 [INF] Application Starting up
+2021-10-03 00:29:48.063 +06:00 [INF] Worker running at: "2021-10-03T00:29:48.0565234+06:00"
+2021-10-03 00:30:54.352 +06:00 [INF] Application Starting up
+2021-10-03 00:30:56.788 +06:00 [INF] Worker running at: "2021-10-03T00:30:56.7809517+06:00"
+2021-10-03 00:37:24.449 +06:00 [INF] Application Starting up
+2021-10-03 00:37:27.085 +06:00 [INF] Worker running at: "2021-10-03T00:37:27.0772205+06:00"
+2021-10-03 00:38:27.020 +06:00 [FTL] Application start-up failed
+NPOI.POIFS.FileSystem.NotOLE2FileException: Invalid header signature; read 0x0000000000000000, expected 0xE11AB1A1E011CFD0 - Your file appears not to be a valid OLE2 document
+   at NPOI.POIFS.Storage.HeaderBlock..ctor(Stream stream)
+   at NPOI.POIFS.FileSystem.POIFSFileSystem..ctor(Stream stream)
+   at NPOI.HSSF.UserModel.HSSFWorkbook..ctor(Stream s, Boolean preserveNodes)
+   at NPOI.HSSF.UserModel.HSSFWorkbook..ctor(Stream s)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String fileUrl) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 36
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 00:53:02.600 +06:00 [INF] Application Starting up
+2021-10-03 00:53:05.240 +06:00 [INF] Worker running at: "2021-10-03T00:53:05.2339504+06:00"
+2021-10-03 00:53:47.323 +06:00 [FTL] Application start-up failed
+System.NotSupportedException: Stream does not support writing.
+   at System.IO.StreamHelpers.ValidateCopyToArgs(Stream source, Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String fileUrl) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 37
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 01:11:49.642 +06:00 [INF] Application Starting up
+2021-10-03 01:11:52.463 +06:00 [INF] Worker running at: "2021-10-03T01:11:52.4585821+06:00"
+2021-10-03 01:12:23.812 +06:00 [FTL] Application start-up failed
+System.NotSupportedException: Stream does not support writing.
+   at System.IO.StreamHelpers.ValidateCopyToArgs(Stream source, Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination, Int32 bufferSize)
+   at System.IO.Stream.CopyTo(Stream destination)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String fileUrl) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 37
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 01:12:32.161 +06:00 [INF] Application Starting up
+2021-10-03 01:12:34.892 +06:00 [INF] Worker running at: "2021-10-03T01:12:34.8844533+06:00"
+2021-10-03 01:14:14.345 +06:00 [INF] Application Starting up
+2021-10-03 01:14:16.942 +06:00 [INF] Worker running at: "2021-10-03T01:14:16.9352704+06:00"
+2021-10-03 01:14:35.134 +06:00 [INF] Application Starting up
+2021-10-03 01:14:37.644 +06:00 [INF] Worker running at: "2021-10-03T01:14:37.6364142+06:00"
+2021-10-03 01:29:12.034 +06:00 [INF] Application Starting up
+2021-10-03 01:29:15.087 +06:00 [INF] Worker running at: "2021-10-03T01:29:15.0808168+06:00"
+2021-10-03 01:40:27.857 +06:00 [INF] Application Starting up
+2021-10-03 01:40:30.711 +06:00 [INF] Worker running at: "2021-10-03T01:40:30.7046184+06:00"
+2021-10-03 02:05:21.663 +06:00 [INF] Application Starting up
+2021-10-03 02:05:24.160 +06:00 [INF] Worker running at: "2021-10-03T02:05:24.1535229+06:00"
+2021-10-03 02:07:22.349 +06:00 [INF] Application Starting up
+2021-10-03 02:07:24.734 +06:00 [INF] Worker running at: "2021-10-03T02:07:24.7278870+06:00"
+2021-10-03 02:09:38.253 +06:00 [FTL] Application start-up failed
+OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor(FileInfo newFile)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String FilePath) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 37
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 02:10:06.452 +06:00 [INF] Application Starting up
+2021-10-03 02:10:09.144 +06:00 [INF] Worker running at: "2021-10-03T02:10:09.1371238+06:00"
+2021-10-03 02:10:12.171 +06:00 [FTL] Application start-up failed
+OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor(FileInfo newFile)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String FilePath) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 37
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 02:16:53.191 +06:00 [INF] Application Starting up
+2021-10-03 02:16:56.258 +06:00 [INF] Worker running at: "2021-10-03T02:16:56.2519003+06:00"
+2021-10-03 02:18:09.000 +06:00 [INF] Application Starting up
+2021-10-03 02:18:11.847 +06:00 [INF] Worker running at: "2021-10-03T02:18:11.8407523+06:00"
+2021-10-03 02:18:36.150 +06:00 [FTL] Application start-up failed
+OfficeOpenXml.LicenseException: Please set the ExcelPackage.LicenseContext property. See https://epplussoftware.com/developers/licenseexception
+   at OfficeOpenXml.ExcelPackage.get_Workbook()
+   at OfficeOpenXml.ExcelPackage.CreateBlankWb()
+   at OfficeOpenXml.ExcelPackage.ConstructNewFile(String password)
+   at OfficeOpenXml.ExcelPackage..ctor(FileInfo newFile)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String FilePath) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 37
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 02:31:31.337 +06:00 [INF] Application Starting up
+2021-10-03 02:31:34.311 +06:00 [INF] Worker running at: "2021-10-03T02:31:34.3045762+06:00"
+2021-10-03 02:32:23.541 +06:00 [INF] Application Starting up
+2021-10-03 02:32:26.041 +06:00 [INF] Worker running at: "2021-10-03T02:32:26.0360665+06:00"
+2021-10-03 02:32:28.402 +06:00 [FTL] Application start-up failed
+System.IndexOutOfRangeException: Worksheet position out of range.
+   at OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String FilePath) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 41
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 02:33:08.539 +06:00 [INF] Application Starting up
+2021-10-03 02:33:11.580 +06:00 [INF] Worker running at: "2021-10-03T02:33:11.5736549+06:00"
+2021-10-03 02:33:25.743 +06:00 [FTL] Application start-up failed
+System.IndexOutOfRangeException: Worksheet position out of range.
+   at OfficeOpenXml.ExcelWorksheets.get_Item(Int32 PositionID)
+   at DataImporter.FileRead.DataRead.ReadExcelData.ReadData(String FilePath) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ReadExcelData.cs:line 41
+   at DataImporter.Worker.Models.CheckStatusModel.CheckCall() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Models\CheckStatusModel.cs:line 30
+   at DataImporter.Worker.Worker.ExecuteAsync(CancellationToken stoppingToken) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Worker.cs:line 29
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at DataImporter.Worker.Program.Main(String[] args) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Worker\Program.cs:line 44
+2021-10-03 02:36:48.718 +06:00 [INF] Application Starting up
+2021-10-03 02:36:51.386 +06:00 [INF] Worker running at: "2021-10-03T02:36:51.3781053+06:00"
+2021-10-03 02:43:31.261 +06:00 [INF] Application Starting up
+2021-10-03 02:43:34.394 +06:00 [INF] Worker running at: "2021-10-03T02:43:34.3857523+06:00"
+2021-10-03 02:44:32.083 +06:00 [INF] Application Starting up
+2021-10-03 02:44:35.734 +06:00 [INF] Worker running at: "2021-10-03T02:44:35.7236051+06:00"
+2021-10-03 02:46:10.803 +06:00 [INF] Application Starting up
+2021-10-03 02:46:13.576 +06:00 [INF] Worker running at: "2021-10-03T02:46:13.5685187+06:00"
+2021-10-03 02:48:58.581 +06:00 [INF] Worker running at: "2021-10-03T02:48:58.5812490+06:00"
+2021-10-03 02:52:24.125 +06:00 [INF] Application Starting up
+2021-10-03 02:52:26.739 +06:00 [INF] Worker running at: "2021-10-03T02:52:26.7332970+06:00"
+2021-10-03 02:52:30.313 +06:00 [INF] Worker running at: "2021-10-03T02:52:30.3132527+06:00"
+2021-10-03 02:57:02.028 +06:00 [INF] Application Starting up
+2021-10-03 02:57:04.513 +06:00 [INF] Worker running at: "2021-10-03T02:57:04.5051705+06:00"
+2021-10-03 02:57:10.940 +06:00 [INF] Worker running at: "2021-10-03T02:57:10.9400351+06:00"
+2021-10-03 03:20:26.113 +06:00 [INF] Application Starting up
+2021-10-03 03:20:29.255 +06:00 [INF] Worker running at: "2021-10-03T03:20:29.2484593+06:00"
+2021-10-03 03:22:32.321 +06:00 [INF] Application Starting up
+2021-10-03 03:22:35.166 +06:00 [INF] Worker running at: "2021-10-03T03:22:35.1591818+06:00"
+2021-10-03 03:23:04.690 +06:00 [INF] Worker running at: "2021-10-03T03:23:04.6899351+06:00"
+2021-10-03 03:24:07.529 +06:00 [INF] Application Starting up
+2021-10-03 03:24:10.335 +06:00 [INF] Worker running at: "2021-10-03T03:24:10.3288566+06:00"
+2021-10-03 03:24:13.984 +06:00 [INF] Worker running at: "2021-10-03T03:24:13.9840504+06:00"
+2021-10-03 03:40:16.473 +06:00 [INF] Application Starting up
+2021-10-03 03:40:19.603 +06:00 [INF] Worker running at: "2021-10-03T03:40:19.5961442+06:00"
+2021-10-03 03:40:24.223 +06:00 [INF] Worker running at: "2021-10-03T03:40:24.2235787+06:00"
+2021-10-03 14:42:30.339 +06:00 [INF] Application Starting up
+2021-10-03 14:42:34.017 +06:00 [INF] Worker running at: "2021-10-03T14:42:34.0097549+06:00"
+2021-10-03 14:42:50.123 +06:00 [INF] Worker running at: "2021-10-03T14:42:50.1236947+06:00"
+2021-10-03 15:15:18.225 +06:00 [INF] Application Starting up
+2021-10-03 15:15:20.776 +06:00 [INF] Worker running at: "2021-10-03T15:15:20.7715678+06:00"
+2021-10-03 15:59:47.103 +06:00 [INF] Application Starting up
+2021-10-03 15:59:49.928 +06:00 [INF] Worker running at: "2021-10-03T15:59:49.9230261+06:00"
+2021-10-03 16:24:15.432 +06:00 [INF] Application Starting up
+2021-10-03 16:24:17.895 +06:00 [INF] Worker running at: "2021-10-03T16:24:17.8889343+06:00"
+2021-10-03 16:24:40.832 +06:00 [INF] Worker running at: "2021-10-03T16:24:40.8319724+06:00"
+2021-10-03 16:26:13.421 +06:00 [INF] Worker running at: "2021-10-03T16:26:13.4211365+06:00"
+2021-10-03 16:31:36.259 +06:00 [INF] Application Starting up
+2021-10-03 16:31:38.844 +06:00 [INF] Worker running at: "2021-10-03T16:31:38.8374019+06:00"
+2021-10-03 16:32:50.842 +06:00 [INF] Worker running at: "2021-10-03T16:32:50.8421161+06:00"
+2021-10-03 16:34:45.725 +06:00 [INF] Worker running at: "2021-10-03T16:34:45.7255527+06:00"

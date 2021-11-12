@@ -1,0 +1,71 @@
+﻿@model DataImporter.Web.Models.Account.RegisterModel
+@{
+    ViewData["Title"] = "Register";
+    Layout = "_Layout";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="Account" asp-action="Register" method="post">
+            <h4>Create a new account.</h4>
+            <hr />
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" class="form-control" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Register</button>
+            <input type="hidden" id="foo" name="foo" />
+        </form>
+    </div>
+    <div class="col-md-6 col-md-offset-2">
+        <section>
+            <h4>Use another service to register.</h4>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See <a href="https://go.microsoft.com/fwlink/?LinkID=532715">this article</a>
+                            for details on setting up this ASP.NET application to support logging in via external services.
+                        </p>
+                    </div>
+                }
+                else
+                {
+
+                }
+            }
+        </section>
+
+    </div>
+</div>
+@section Scripts
+{
+    
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcY7LwcAAAAANJnepCcnnD6uYKuGK_ki1Yz-XcX"></script>
+        <script>
+            grecaptcha.ready(function () {
+                grecaptcha.execute('6LcY7LwcAAAAANJnepCcnnD6uYKuGK_ki1Yz-XcX', { action: 'Register' }).then(function (token) {
+                    document.getElementById("foo").value = token;
+                });
+            });
+        </script>
+  
+
+    <partial name="_ValidationScriptsPartial" />
+}

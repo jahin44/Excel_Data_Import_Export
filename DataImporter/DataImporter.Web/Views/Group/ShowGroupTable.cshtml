@@ -1,0 +1,90 @@
+﻿@model ShowGroupTableModel
+
+@{
+    ViewData["Title"] = "ShowGroupTable";
+}
+@section Styles
+{
+    <link rel="stylesheet" href="/DataImporter/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+}
+
+@section Scripts
+{
+    <script src="/DataImporter/plugins/datatables/jquery.dataTables.js"></script>
+    <script src="/DataImporter/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script>
+        $(function () {
+            $('#groups').DataTable({
+
+            });
+    </script>
+}
+
+<!-- Main content -->
+<section class="content">
+    <div class="row">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="card-title">Groups Data</h3>
+                </div>
+                <form class="form-horizontal" method="get" asp-controller="Group"
+                      asp-action="ShowGroupTable" asp-antiforgery="true" enctype="multipart/form-data">
+                    <div asp-validation-summary="All" class="text-danger"></div>
+                    <input type="hidden" asp-for="Id" />
+                    <div class="card-body">
+                        <div class="form-group row">
+                            <label asp-for="GroupName" class="col-sm-2 col-form-label">Group Name</label>
+                            <div class="col-sm-6">
+                                <input type="text" class="form-control" asp-for="GroupName"
+                                       id="title">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <!-- /.card-header -->
+                <div class="card-body">
+                    <table id="groups" class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                @foreach (var Header in Model.HeaderName)
+                                {
+                                    <th>@Header</th>                                    
+                                }
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @{int j = 0; } 
+                            @for (var i = 1; i < (Model.TableData.Count()/Model.HeaderName.Count()); i++)
+                            {
+
+                            <tr>
+                               @for (var k =0 ; k <Model.HeaderName.Count();k++)
+
+                               {
+                                    <td>@Model.TableData[j++]</td>
+                                    
+                                }
+                            </tr>
+                            }
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                @foreach (var Header in Model.HeaderName)
+                                {
+                                    <th>@Header</th>
+                                }
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <partial name="_DeletePopupPartial" />
+                </div>
+                <!-- /.card-body -->
+            </div>
+            <!-- /.card -->
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+</section>
+<!-- /.content -->

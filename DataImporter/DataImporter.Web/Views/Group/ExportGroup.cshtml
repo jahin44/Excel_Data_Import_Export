@@ -1,0 +1,49 @@
+﻿@model ExportGroupModel
+@{
+    ViewData["Title"] = "ExportGroup";
+}
+
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <h3 class="card-title">Export Data in Excel</h3>
+                    </div>
+                    <!-- /.card-header -->
+                    <!-- form start -->
+                    <form class="form-horizontal" method="post" asp-controller="Group"
+                          asp-action="ExportGroup" asp-antiforgery="true" enctype="multipart/form-data">
+                        <div asp-validation-summary="All" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="card-body">
+                            <div class="form-group row">
+                                <label asp-for="GroupName" class="col-sm-2 col-form-label">Group Name</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" asp-for="GroupName"
+                                           id="title">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label asp-for="Email" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" asp-for="Email" class="form-control"
+                                           id="email" placeholder="example@@gmail.com">
+                                </div>
+                            </div>
+                            <div class="card-footer">
+                                <button type="submit" class="btn btn-info">Export</button>
+                                <a asp-action="Index" asp-controller="Group"
+                                   class="btn btn-default float-right">Cancel</a>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- /.card-footer -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

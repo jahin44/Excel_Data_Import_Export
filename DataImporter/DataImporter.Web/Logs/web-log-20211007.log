@@ -1,0 +1,67 @@
+2021-10-07 01:21:28.870 +06:00 [INF] Application Starting up
+2021-10-07 01:22:49.519 +06:00 [INF] Application Starting up
+2021-10-07 02:00:05.474 +06:00 [INF] Application Starting up
+2021-10-07 02:02:51.270 +06:00 [INF] Application Starting up
+2021-10-07 02:07:00.477 +06:00 [INF] Application Starting up
+2021-10-07 02:11:49.046 +06:00 [INF] Application Starting up
+2021-10-07 02:12:31.802 +06:00 [INF] Application Starting up
+2021-10-07 02:17:42.739 +06:00 [INF] Application Starting up
+2021-10-07 02:20:25.184 +06:00 [INF] Application Starting up
+2021-10-07 02:21:32.399 +06:00 [ERR] Same File, Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 103
+2021-10-07 02:21:58.408 +06:00 [ERR] Same File, Failed
+DataImporter.SystemImporter.Exceptions.DuplicateTitleException: This File already exists
+   at DataImporter.SystemImporter.Services.FileStatusService.CreateFileStatus(FileStatus fileStatus) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\FileStatusService.cs:line 49
+   at DataImporter.Web.Models.GroupModel.ImportGroupModel.CreateFileStatus() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ImportGroupModel.cs:line 75
+   at DataImporter.Web.Controllers.GroupController.Preview(ImportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 103
+2021-10-07 03:12:45.778 +06:00 [INF] Application Starting up
+2021-10-07 03:15:36.288 +06:00 [INF] Application Starting up
+2021-10-07 03:18:27.484 +06:00 [INF] Application Starting up
+2021-10-07 03:34:46.490 +06:00 [INF] Application Starting up
+2021-10-07 03:35:18.979 +06:00 [ERR] Create Group Failed
+System.ArgumentException: This row already belongs to this table.
+   at System.Data.DataTable.InsertRow(DataRow row, Int64 proposedID, Int32 pos, Boolean fireEvent)
+   at System.Data.DataRowCollection.Add(DataRow row)
+   at DataImporter.FileRead.DataRead.ExportExcel.ExportTable(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ExportExcel.cs:line 65
+   at DataImporter.Web.Models.GroupModel.ExportGroupModel.ExportAndEmail(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ExportGroupModel.cs:line 46
+   at DataImporter.Web.Controllers.GroupController.ExportGroup(ExportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 139
+2021-10-07 03:37:39.323 +06:00 [INF] Application Starting up
+2021-10-07 04:36:22.881 +06:00 [INF] Application Starting up
+2021-10-07 04:37:05.970 +06:00 [ERR] Create Group Failed
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at DataImporter.FileRead.DataRead.ExportExcel.ExportTable(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ExportExcel.cs:line 62
+   at DataImporter.Web.Models.GroupModel.ExportGroupModel.ExportAndEmail(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ExportGroupModel.cs:line 46
+   at DataImporter.Web.Controllers.GroupController.ExportGroup(ExportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 139
+2021-10-07 10:43:52.667 +06:00 [INF] Application Starting up
+2021-10-07 10:44:06.520 +06:00 [ERR] Create Group Failed
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at DataImporter.FileRead.DataRead.ExportExcel.ExportTable(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.FileRead\DataRead\ExportExcel.cs:line 62
+   at DataImporter.Web.Models.GroupModel.ExportGroupModel.ExportAndEmail(Int32 Id, DataTable dataTable) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\ExportGroupModel.cs:line 46
+   at DataImporter.Web.Controllers.GroupController.ExportGroup(ExportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 139
+2021-10-07 10:44:18.869 +06:00 [ERR] Create Group Failed
+System.ArgumentException: Row number out of bounds
+   at OfficeOpenXml.ExcelWorksheet.Row(Int32 row)
+   at DataImporter.Web.Controllers.GroupController.ExportGroup(ExportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 147
+2021-10-07 10:45:25.150 +06:00 [INF] Application Starting up
+2021-10-07 10:45:40.553 +06:00 [ERR] Create Group Failed
+System.ArgumentException: Can't set color when patterntype is not set.
+   at OfficeOpenXml.Style.XmlAccess.ExcelXfs.GetIdFill(eStyleClass styleClass, eStyleProperty styleProperty, Object value)
+   at OfficeOpenXml.Style.XmlAccess.ExcelXfs.GetNewID(ExcelStyleCollection`1 xfsCol, StyleBase styleObject, eStyleClass styleClass, eStyleProperty styleProperty, Object value)
+   at OfficeOpenXml.ExcelStyles.SetStyleCells(StyleBase sender, StyleChangeEventArgs e, ExcelAddressBase address, ExcelWorksheet ws, Dictionary`2 styleCashe)
+   at OfficeOpenXml.ExcelStyles.SetStyleAddress(StyleBase sender, StyleChangeEventArgs e, ExcelAddressBase address, ExcelWorksheet ws, Dictionary`2& styleCashe)
+   at OfficeOpenXml.ExcelStyles.PropertyChange(StyleBase sender, StyleChangeEventArgs e)
+   at OfficeOpenXml.Style.ExcelColor.set_Rgb(String value)
+   at OfficeOpenXml.Style.ExcelColor.SetColor(Color color)
+   at DataImporter.Web.Controllers.GroupController.ExportGroup(ExportGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 147
+2021-10-07 10:49:47.458 +06:00 [INF] Application Starting up
+2021-10-07 11:05:46.245 +06:00 [INF] Application Starting up
+2021-10-07 11:07:59.219 +06:00 [INF] Application Starting up
+2021-10-07 11:32:23.825 +06:00 [INF] Application Starting up
+2021-10-07 11:34:26.159 +06:00 [INF] Application Starting up

@@ -1,0 +1,16 @@
+2021-10-02 19:10:16.890 +06:00 [INF] Application Starting up
+2021-10-02 19:18:06.967 +06:00 [INF] Application Starting up
+2021-10-02 19:19:01.897 +06:00 [ERR] Create Group Failed
+System.InvalidOperationException: A second operation was started on this context before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.Enumerator.MoveNext()
+   at System.Linq.Enumerable.Single[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.Execute[TResult](Expression query)
+   at Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryProvider.Execute[TResult](Expression expression)
+   at System.Linq.Queryable.Count[TSource](IQueryable`1 source)
+   at DataImporter.Data.Repository`2.GetCount(Expression`1 filter) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Data\Repository.cs:line 70
+   at DataImporter.SystemImporter.Services.GroupService.IsTitleAlreadyUsed(String groupName) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 60
+   at DataImporter.SystemImporter.Services.GroupService.CreateGroup(Group group) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.SystemImporter\Services\GroupService.cs:line 48
+   at DataImporter.Web.Models.GroupModel.CreateGroupModel.CreateGroup() in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Models\GroupModel\CreateGroupModel.cs:line 43
+   at DataImporter.Web.Controllers.GroupController.Create(CreateGroupModel model) in D:\GitHub\Final Project\ASPNET_DevSkill\DataImporter\DataImporter.Web\Controllers\GroupController.cs:line 70
+2021-10-02 20:19:57.443 +06:00 [INF] Application Starting up
